@@ -1,9 +1,9 @@
 # Freeze 🥶
 
-[![Build Status](https://github.com/Geek1243/FreezeMC/actions/workflows/build.yml/badge.svg)](https://github.com/Geek1243/FreezeMC/actions/workflows/build.yml)
+[![Build Test](https://github.com/geek1243/FreezeMC/actions/workflows/build.yml/badge.svg)](https://github.com/geek1243/FreezeMC/actions/workflows/build.yml)
 [![Qodana Analysis](https://github.com/Geek1243/FreezeMC/actions/workflows/qodana.yml/badge.svg)](https://github.com/Geek1243/FreezeMC/actions/workflows/qodana.yml)
-[![Release](https://github.com/Geek1243/FreezeMC/actions/workflows/release.yml/badge.svg)](https://github.com/Geek1243/FreezeMC/actions/workflows/release.yml)
-[![MockBukkit](https://github.com/Geek1243/FreezeMC/actions/workflows/mockbukkit.yml/badge.svg)](https://github.com/Geek1243/FreezeMC/actions/workflows/mockbukkit.yml)
+[![Release](https://github.com/geek1243/FreezeMC/actions/workflows/release.yml/badge.svg)](https://github.com/geek1243/FreezeMC/actions/workflows/release.yml)
+[![MockBukkit Test](https://github.com/geek1243/FreezeMC/actions/workflows/mockbukkit.yml/badge.svg)](https://github.com/geek1243/FreezeMC/actions/workflows/mockbukkit.yml)
 
 A simple plugin to freeze players in place. 🧊
 
