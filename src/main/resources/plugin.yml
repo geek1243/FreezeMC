@@ -1,0 +1,16 @@
+name: freeze-recode
+version: '5.0'
+main: com.geek1243.freeze.main.java
+api-version: '1.21'
+authors: [ Geek1243 (Zach Martin Sr.) ]
+description: A Simple Yet Essential Freeze Plugin For Spigot
+website: www.ampcraft.org
+commands:
+  ss:
+    description: freezes a player /ss
+  ssversion:
+    description: checks current version
+  sshelp:
+    description: Shows all Commands
+  sskick:
+    description: kicks a player
