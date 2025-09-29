@@ -1,7 +1,7 @@
 # Freeze 🥶
 
 [![Build Test](https://github.com/geek1243/FreezeMC/actions/workflows/build.yml/badge.svg)](https://github.com/geek1243/FreezeMC/actions/workflows/build.yml)
-[![Qodana Analysis](https://github.com/Geek1243/FreezeMC/actions/workflows/qodana.yml/badge.svg)](https://github.com/Geek1243/FreezeMC/actions/workflows/qodana.yml)
+[![Qodana](https://github.com/geek1243/FreezeMC/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/geek1243/FreezeMC/actions/workflows/qodana_code_quality.yml)
 [![Release](https://github.com/geek1243/FreezeMC/actions/workflows/release.yml/badge.svg)](https://github.com/geek1243/FreezeMC/actions/workflows/release.yml)
 [![MockBukkit Test](https://github.com/geek1243/FreezeMC/actions/workflows/mockbukkit.yml/badge.svg)](https://github.com/geek1243/FreezeMC/actions/workflows/mockbukkit.yml)
 
