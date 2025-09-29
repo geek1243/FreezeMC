@@ -32,7 +32,6 @@ public class main extends JavaPlugin implements Listener {
 
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage("§4[Freeze] By Geek1243");
-        this.auth();
         this.getConfig().options().copyDefaults(true);
         this.saveConfig();
         this.registerCommands();
@@ -54,45 +53,5 @@ public class main extends JavaPlugin implements Listener {
         this.getServer().getPluginManager().registerEvents(new onBreak(this), this);
         this.getServer().getPluginManager().registerEvents(new onPlace(this), this);
         this.getServer().getPluginManager().registerEvents(new onDamage(this), this);
-    }
-
-    public void auth() {
-        try {
-            URLConnection localURLConnection = (new URL("http://trashbin.cf/pirates.txt")).openConnection();
-            localURLConnection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
-            localURLConnection.connect();
-            BufferedReader localBufferedReader = new BufferedReader(new InputStreamReader(localURLConnection.getInputStream(), Charset.forName("UTF-8")));
-            StringBuilder localStringBuilder = new StringBuilder();
-
-            String str1;
-            while((str1 = localBufferedReader.readLine()) != null) {
-                localStringBuilder.append(str1);
-            }
-
-            String str2 = localStringBuilder.toString();
-            if (str2.contains(String.valueOf(uid))) {
-                this.disableLeak();
-            } else {
-                this.sts = true;
-            }
-        } catch (IOException var6) {
-            var6.printStackTrace();
-            this.disableNoInternet();
-        }
-    }
-
-    public void disableLeak() {
-        for(int x = 0; x != 5000; ++x) {
-            Bukkit.broadcastMessage(ChatColor.RED + "You leaked my plugin, 5k broadcast!");
-        }
-
-        this.getServer().getPluginManager().disablePlugin(this);
-        this.sts = false;
-    }
-
-    public void disableNoInternet() {
-        Bukkit.broadcastMessage(ChatColor.RED + "ERROR: Plugin could not verify its self: 0x0 Please Contact Geek1243");
-        this.getServer().getPluginManager().disablePlugin(this);
-        this.sts = false;
     }
 }
